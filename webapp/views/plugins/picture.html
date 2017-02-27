@@ -1,0 +1,24 @@
+<md-content class="md-padding" layout="row">
+	<div flex flex-gt-sm="50">
+		<md-card>
+			<img id="my-image" ng-src="img/no-picture.png" class="md-card-image" alt="Camera Picture" style="max-height: 50%;"/>
+			<!-- <img ng-show="imageData === undefined" ng-src="img/no-picture.png" class="md-card-image" alt="Camera Picture"> -->
+			<md-card-title>
+				<md-card-title-text>
+					<span class="md-headline">Cordova Camera Plugin</span>
+				</md-card-title-text>
+			</md-card-title>
+			<md-card-content>
+				<p>
+					Thats a simple demonstration of Cordova Camera Plugin. Click on the button below to take a picture and the
+					picture will be displayed above.
+					There are options you can set on the file <code>picture-ctrl.js</code> .
+				</p>
+			</md-card-content>
+			<md-card-actions layout="row" layout-align="end center">
+				<md-button class="md-raised md-primary" ng-click="picture.takePicture()">Take Picture</md-button>
+				<md-button class="md-raised md-warn" ng-click="picture.cleanPicture()">Remove Picture</md-button>
+			</md-card-actions>
+		</md-card>
+	</div>
+</md-content>

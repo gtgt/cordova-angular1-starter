@@ -1,0 +1,17 @@
+{
+	"MESSAGE": "Árvíztűrőtükörfúrógép!",
+	"DIALOG_INTRODUCTION": "Egy aprócska kalapocska, benne csappka mappka mocska.",
+	"ALERT": "Riasztás",
+	"CONFIRMATION_ALERT": "Riasztás visszaigazolás",
+	"HU": "Magyar",
+	"EN": "Angol",
+	"SELECT_LANGUAGE": "Válassz nyelvet",
+	"DASHBOARD": "Irányítópult",
+	"TABS": "Fülek",
+	"RESTFUL_TEST": "Restful teszt",
+	"DIALOGS": "Ablakok",
+	"CARDS": "Kártyák",
+	"CAMERA": "Kamera",
+	"DEVICE_INFO": "Eszköz információ",
+	"LOGIN": "Bejelentkezés"
+}

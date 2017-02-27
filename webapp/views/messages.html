@@ -1,0 +1,65 @@
+
+	<md-toolbar md-scroll-shrink>
+		<div class="md-toolbar-tools">
+			<div>
+				<md-button class="md-icon-button" aria-label="Go Back" ng-click="messages.util.linkTo('api')">
+					<ng-md-icon aria-label="Back" icon="keyboard_backspace"></ng-md-icon>
+				</md-button>
+			</div>
+			<h2 flex md-truncate>{{'MESSAGE'|translate }}</h2>
+		</div>
+	</md-toolbar>
+
+	<md-content layout="column">
+		<md-subheader class="md-primary">Unread messages</md-subheader>
+		<md-list flex>
+			<md-list-item class="md-3-line" ng-repeat="message in messages.messages" ng-click="null">
+				<md-icon md-svg-icon="{{message.icon}}" ng-if="message.icon" ng-class="{'md-avatar-icon': message.icon}"></md-icon>
+				<img ng-src="{{message.face}}" ng-if="!message.icon" class="md-avatar" alt="{{message.who}}">
+				<div class="md-list-item-text" layout="column">
+					<h3>{{message.what}}</h3>
+					<h4>{{message.who}}</h4>
+					<p>
+						{{message.notes}}
+					</p>
+				</div>
+			</md-list-item>
+			<md-divider></md-divider>
+			<md-subheader class="md-warn">Late messages</md-subheader>
+			<md-list-item class="md-3-line" ng-repeat="message in messages.messages" ng-click="null">
+				<img ng-src="{{message.face}}" class="md-avatar" alt="{{message.who}}">
+				<div class="md-list-item-text" layout="column">
+					<h3>{{message.what}}</h3>
+					<h4>{{message.who}}</h4>
+					<p>
+						{{message.notes}}
+					</p>
+				</div>
+			</md-list-item>
+			<md-divider></md-divider>
+			<md-subheader>Read messages</md-subheader>
+			<md-list-item class="md-3-line" ng-repeat="message in messages.messages" ng-click="null">
+				<img ng-src="{{message.face}}" class="md-avatar" alt="{{message.who}}">
+				<div class="md-list-item-text" layout="column">
+					<h3>{{message.what}}</h3>
+					<h4>{{message.who}}</h4>
+					<p>
+						{{message.notes}}
+					</p>
+				</div>
+			</md-list-item>
+			<md-divider></md-divider>
+			<md-subheader class="md-accent">Archived messages</md-subheader>
+			<md-list-item class="md-3-line" ng-repeat="message in messages.messages" ng-click="null">
+				<img ng-src="{{message.face}}" class="md-avatar" alt="{{message.who}}">
+				<div class="md-list-item-text" layout="column">
+					<h3>{{message.what}}</h3>
+					<h4>{{message.who}}</h4>
+					<p>
+						{{message.notes}}
+					</p>
+				</div>
+			</md-list-item>
+		</md-list>
+
+	</md-content>

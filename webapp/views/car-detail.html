@@ -1,0 +1,34 @@
+<md-content layout-padding>
+	<div class="md-display-1" md-truncate>{{car.car.title}}</div>
+	<md-tabs md-dynamic-height md-stretch-tabs="auto" md-border-bottom>
+		<md-tab label="General Information">
+			<div>
+				<h1 class="md-display-2"></h1>
+				<img ng-src="{{car.car.mainImage}}" class="md-card-image" alt="{{car.car.title}}">
+				<p>{{car.car.description}}</p>
+			</div>
+		</md-tab>
+		<md-tab label="Curiosities">
+			<div>
+				<md-card ng-repeat="fact in car.car.facts">
+					<md-card-content>
+						<h3>{{fact.title}}</h3>
+						<p>{{fact.text}}</p>
+					</md-card-content>
+				</md-card>
+			</div>
+		</md-tab>
+		<md-tab label="Images">
+			<div>
+				<md-card ng-repeat="image in car.car.images">
+					<md-card-content>
+						<img ng-src="{{image.url}}" class="md-card-image" alt="{{image.title}}">
+					</md-card-content>
+				</md-card>
+			</div>
+		</md-tab>
+	</md-tabs>
+</md-content>
+<md-button class="md-primary md-fab md-fab-bottom-right" aria-label="Go Back" ui-sref="apiCars">
+	<ng-md-icon aria-label="Back" icon="keyboard_backspace"></ng-md-icon>
+</md-button>
