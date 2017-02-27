@@ -128,9 +128,9 @@ This task will run gulp acs and gulp views.
 
 ---
 
-### Gulp Acs
+### Gulp App
 ```code
-gulp acs
+gulp app
 ```
 
 This taks will compile all Javascript of the application (That can be found here -> 'www/webapp') into a single file called 'app.min.js' that will be located at 'www/js' folder.
